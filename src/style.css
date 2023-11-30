@@ -1,0 +1,225 @@
+:root {
+    --inside-bg-color: rgba(20,20,20,0.4);
+    --footer-bg-color: rgba(20,20,20,0.6);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    background: rgb(40,40,40);
+}
+.app-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: var(--inside-bg-color);
+    border-radius: 10px 10px 0 0;
+    padding: 0 0 10px 0;
+    margin: 40px 10px 0 10px;
+    width: 60%;
+}
+.profile-picture {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.main-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#name {
+    user-select: none;
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+}
+#job {
+    user-select: none;
+    font-size: 14px;
+    padding: 5px;
+}
+#website {
+    text-decoration: none;
+    font-size: 10px;
+    padding: 5px;
+}
+#website:hover {
+    transition: .4s;
+    background-color: rgb(40,40,40);
+    border-radius: 5px;
+}
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    padding: 10px;
+}
+#email-btn {
+    font-size: 18px;
+    color: black;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+#email-btn i {
+    color: black;
+}
+#email-btn:hover {
+    transition: 0.4s;
+    background: rgba(120,120,120,0.4);
+    color: white;
+}
+#email-btn:hover i{
+    transition: 0.4s;
+    color: white;
+}
+#linkedin-btn {
+    font-size: 18px;
+    color: white;
+    background-color: rgb(0, 116, 179);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+#linkedin-btn:hover {
+    transition: .4s;
+    background: rgb(0, 166, 255);
+}
+.subject-container {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 60%;
+    padding: 20px;
+    background: var(--inside-bg-color)
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+}
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+    padding: 20px;
+    background-color:var(--footer-bg-color);
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 40px;
+}
+.footer-container a i {
+    font-size: 40px;
+    color: rgba(120,120,120,0.6);
+}
+#twitter:hover i{
+    color: black;
+}
+#facebook:hover i {
+    color: rgb(24, 119, 242);
+}
+#instagram:hover i {
+    color: #c13584
+}
+#github:hover i {
+    color: orangered
+}
+
+@media (max-width: 578px) {
+    #name {
+        font-size: 18px;
+    }
+    #job {
+        font-size: 10px;
+    }
+    #website {
+        font-size: 8px;
+    }
+    #email-btn, #linkedin-btn {
+        font-size: 12px;
+    }
+    .subject-header {
+        font-size: 14px;
+    }
+    .subject-content {
+        font-size: 10px;
+    }
+    .footer-container a i {
+        font-size: 30px;
+    }
+    .info-container, .subject-container, .footer-container {
+        width: 80%;
+    }
+}
+@media (max-width: 400px) {
+    #name {
+        font-size: 14px;
+    }
+    #job {
+        font-size: 8px;
+    }
+    #website {
+        font-size: 6px;
+    }
+    #email-btn, #linkedin-btn {
+        font-size: 8px;
+    }
+    .subject-header {
+        font-size: 10px;
+    }
+    .subject-content {
+        font-size: 8px;
+    }
+    .footer-container a i {
+        font-size: 25px;
+    }
+    .info-container, .subject-container, .footer-container {
+        width: 90%;
+    }
+}
+@media (max-width: 280px) {
+    #name {
+        font-size: 10px;
+    }
+    #job {
+        font-size: 6px;
+    }
+    #website {
+        font-size: 4px;
+    }
+    .subject-header {
+        font-size: 8px;
+    }
+    .subject-content {
+        font-size: 6px;
+    }
+    .footer-container a i {
+        font-size: 20px;
+    }
+
+    .info-container, .subject-container, .footer-container {
+        width: 100%;
+    }
+}
